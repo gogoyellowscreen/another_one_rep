@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/activity_main_previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/activity_main_qrCodeFoundButton"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/activity_main_qrCodeFoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEE QR CODE"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/openAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_previewView" />
+
+    <Button
+        android:id="@+id/openAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN ALBUM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/activity_main_qrCodeFoundButton"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_previewView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

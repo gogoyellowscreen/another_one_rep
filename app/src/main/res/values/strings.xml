@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QRScanner</string>
+    <string name="qr_parsed_type">QR PARSED TYPE:</string>
+</resources>
